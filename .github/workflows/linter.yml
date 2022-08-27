@@ -3,6 +3,13 @@
 name: Linter
 
 on:
+  push:
+    branches:
+      - ajchemist
+    paths:
+      - '**.json'
+      - '**.md'
+      - '**.sh'
   pull_request:
     branches: [ main ]
     paths:
